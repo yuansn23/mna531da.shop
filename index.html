@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI株式分析レポート</title>
+      <link rel="stylesheet" href="css/1.css"> 
+</head>
+<body>
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+    
+    <!-- Stars -->
+    <div class="stars" id="starsContainer"></div>
+    
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <div class="header-section">
+            <h1 class="main-title">毎日更新されるAI分析で<br>市場トレンドを理解する</h1>
+            <img src="img/1.jpg" alt="AI分析イメージ" class="hero-image">
+            
+            <!-- CTA Button -->
+            <div class="cta-section">
+                <button class="cta-button" onclick="aa1()">
+                    LINEで分析レポートを受け取る
+                </button>
+            </div>
+            
+            <!-- Alert -->
+            <div class="alert-box">
+                <div class="alert-text">⚡ 本日残り10件のレポート</div>
+            </div>
+        </div>
+        
+        <!-- Features -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-text">
+                    <span class="feature-highlight">🤖 AI分析による株式推奨</span>
+                    先進的な人工知能技術を活用した高精度分析
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-text">
+                    <span class="feature-highlight">📊 リアルタイム市場トレンド</span>
+                    最新の市場動向とシグナルを即座にお届け
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-text">
+                    <span class="feature-highlight">💡 明確な売買指標</span>
+                    各選択に対する分かりやすい買い/売りサイン
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-text">
+                    <span class="feature-highlight">🆓 完全無料アクセス</span>
+                    クレジットカード登録一切不要
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <!-- Footer -->
+        <div class="footer-section">
+            <div class="disclaimer">
+                本サービスは参考・教育目的のみで提供されており、財務アドバイスや金融商品の推奨を構成するものではありません。
+            </div>
+            <div class="legal-links">
+                <a href="privacy.html" class="legal-link">プライバシーポリシー</a>
+                <a href="terms.html" class="legal-link">利用規約</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Create stars
+        function createStars() {
+            const starsContainer = document.getElementById('starsContainer');
+            const starCount = 50;
+            
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+        
+        // WhatsApp redirect function
+        function aa1() {
+            window.location.href = "https://wa.me/";
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            createStars();
+        });
+    </script>
+</body>
+</html>
